@@ -2,6 +2,7 @@
 !.gitignore
 !/.config/
 !.zshrc
+!.gitconfig
 !README.md
 
 /.config/pulse
