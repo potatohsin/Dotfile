@@ -1,10 +1,7 @@
-.cache
-.local
-.ssh
-.vscode-server
-.bash*
-.viminfo
-.wget-hsts
-somelog.txt
-pulse
-Hyprland
+/*
+!.gitignore
+!/.config/
+!.zshrc
+!README.md
+
+/.config/pulse
