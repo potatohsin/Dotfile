@@ -1,0 +1,9 @@
+.cache
+.local
+.vscode-server
+.bash*
+.viminfo
+.wget-hsts
+somelog.txt
+pulse
+Hyprland
