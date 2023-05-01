@@ -1,5 +1,6 @@
 .cache
 .local
+.ssh
 .vscode-server
 .bash*
 .viminfo
