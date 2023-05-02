@@ -1,9 +1,8 @@
 # Install Hyprland
 sudo dnf copr enable solopasha/hyprland
-sudo dnf install hyprland waybar-hyprland
-sudo dnf install qt5-qtwayland qt6-qtwayland
+sudo dnf install hyprland waybar-hyprland xdg-desktop-portal-hyprland hyprpaper 
 sudo dnf install jq
-sudo dnf install vulkan-headers
+sudo dnf install dunst clipman qt5-qtwayland qt6-qtwayland qt5ct libva 
 
 # SDDM Auto Login
 sudo dnf install sddm

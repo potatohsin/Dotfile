@@ -23,7 +23,7 @@ while getopts ":n:l" opt; do
       exit 1
       ;;
     l) 
-      nerd_fonts_list="$(curl -s $nerd_fonts_repos_url | jq -r ".assets[].name")" | cur -d\. f1
+      nerd_fonts_list="$(curl -s $nerd_fonts_repos_url | jq -r ".assets[].name")"
       echo $nerd_fonts_list
       exit 1
       ;;

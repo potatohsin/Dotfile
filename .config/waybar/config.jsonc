@@ -1,5 +1,6 @@
 {
     "layer": "top",
+    "spacing": 2,
     "modules-left": [
         "custom/launcher",
         "wlr/workspaces"
@@ -11,11 +12,8 @@
         "tray",
         "cpu",
         "memory",
-        "backlight",
         "pulseaudio",
         "network",
-        "battery",
-        "custom/power",
         "clock"
     ],
     "pulseaudio": {
@@ -44,33 +42,8 @@
     },
     "network": {
         "tooltip": false,
-        "format-wifi": " {essid}",
+        "format-wifi": " Wi-Fi",
         "format-ethernet": "󰈀 Ethernet"
-    },
-    "backlight": {
-        "tooltip": false,
-        "format": " {}%",
-        "interval": 1,
-        "on-scroll-up": "brightnessctl set 5%+",
-        "on-scroll-down": "brightnessctl set 5%-"
-    },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon}  {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
     },
     "tray": {
         "icon-size": 18,
