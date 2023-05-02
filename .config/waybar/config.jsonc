@@ -1,6 +1,9 @@
 {
     "layer": "top",
     "spacing": 2,
+    "height": 30,
+    "margin-left": 5,
+    "margin-right": 5,
     "modules-left": [
         "custom/launcher",
         "wlr/workspaces"
