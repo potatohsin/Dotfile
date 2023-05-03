@@ -1,5 +1,5 @@
-### Install Fedora 38(Minimal) 
->Dwnload and install [Fedora 38 Server](https://fedoraproject.org/server/download)(Minimal)
+### Install Fedora 38 (Minimal) 
+>Dwnload and install [Fedora 38 Server](https://fedoraproject.org/server/download) (Minimal)
 ### Install Nvidia Driver
 <p>Enable RPM Fusion repo</p>
 ```
@@ -37,9 +37,8 @@ sudo reboot
 ```
 sudo dnf copr enable solopasha/hyprland
 sudo dnf install hyprland waybar-hyprland xdg-desktop-portal-hyprland hyprpaper
-
-cp .config to your home fold.
 ```
+`cp .config to your home folder.`
 
 <p>Install other packages</p>
 ```
