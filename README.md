@@ -38,7 +38,7 @@ sudo reboot
 sudo dnf copr enable solopasha/hyprland
 sudo dnf install hyprland waybar-hyprland xdg-desktop-portal-hyprland hyprpaper
 ```
-`cp .config to your home folder.`
+`copy .config to your home folder.`
 
 <p>Install other packages</p>
 ```
@@ -48,7 +48,8 @@ sudo dnf install jq thunar kitty dunst polkit-kde
 ### Install Nerd Fonts
 ```
 % ~/.config/scripts/install-jetbrains-mono-nerd-fonts.sh
-
+```
+```
 option: -l -n
   -l              print nerd-fonts name list
   -n fonts_name   install fonts_name. eg: JetBrainsMono.zip
