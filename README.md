@@ -8,7 +8,7 @@ sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-releas
 Install some tools
 ```
 sudo dnf groupinstall "Development Tools" "Development Libraries"
-sudo dnf install mokutil openssl kmodtool akmods
+sudo dnf install openssl kmodtool akmods
 ```
 Enable Secure Boot
 ```
