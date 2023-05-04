@@ -42,7 +42,7 @@ sudo dnf install hyprland waybar-hyprland xdg-desktop-portal-hyprland hyprpaper
 
 Install other packages
 ```
-sudo dnf install jq thunar kitty dunst polkit-kde
+sudo dnf install jq thunar dunst polkit-kde
 ```
 >Kitty can't run in my vm.Use other term eg: Foot.
 ### Install Nerd Fonts
