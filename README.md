@@ -1,5 +1,5 @@
-### Install Fedora 38 (Minimal) 
->Dwnload and install [Fedora 38 Server](https://fedoraproject.org/server/download) (Minimal)
+### Install Fedora 38 (Custom) 
+>Dwnload and install [Fedora 38 Server](https://fedoraproject.org/server/download) (Custom)
 ### Install Nvidia Driver
 Enable RPM Fusion repo
 ```
@@ -42,18 +42,9 @@ sudo dnf install hyprland waybar-hyprland xdg-desktop-portal-hyprland hyprpaper
 
 Install other packages
 ```
-sudo dnf install jq thunar dunst polkit-kde
+sudo dnf install jq polkit-kde qt5ct qt6-qtwayland thunar blueman python-cairo
 ```
 >Kitty can't run in my vm.Use other term eg: Foot.
-### Install Nerd Fonts
-```
-% ~/.config/scripts/install-jetbrains-mono-nerd-fonts.sh
-```
-```
-option: -l -n
-  -l              print nerd-fonts name list
-  -n fonts_name   install fonts_name. eg: JetBrainsMono.zip
-```
 
 ### SDDM Auto Login
 ```
