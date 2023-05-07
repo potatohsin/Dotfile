@@ -42,7 +42,7 @@ sudo dnf install hyprland waybar-hyprland xdg-desktop-portal-hyprland hyprpaper
 
 Install other packages
 ```
-sudo dnf install jq polkit-kde qt5ct qt6-qtwayland thunar blueman python-cairo
+sudo dnf install jq polkit-kde qt5ct qt6-qtwayland thunar blueman python-cairo python-gobject gnome-keyring htop
 ```
 >Kitty can't run in my vm.Use other term eg: Foot.
 

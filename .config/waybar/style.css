@@ -54,8 +54,7 @@ button:hover {
 #temperature,
 #network,
 #pulseaudio,
-#tray,
-#custom-launcher {
+#tray {
     padding: 0 10px;
     color: #ffffff;
     border-radius: 2;
@@ -137,8 +136,4 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
-}
-
-#custom-launcher {
-    font-size: 20px;
 }
