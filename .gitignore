@@ -2,6 +2,7 @@
 !.gitignore
 !/.config/
 !README.md
+!.zshrc
 
 /.config/pulse
 /.config/Thunar
