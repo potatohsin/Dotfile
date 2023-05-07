@@ -46,11 +46,11 @@ sudo dnf install jq polkit-kde qt5ct qt6-qtwayland thunar blueman python-cairo p
 ```
 >Kitty can't run in my vm.Use other term eg: Foot.
 
-### SDDM Auto Login
+### SDDM
 ```
 sudo dnf install sddm
 ```
-edit /etc/sddm/sddm.conf
+auto login if need. edit /etc/sddm/sddm.conf
 ```
 [Autologin]
 User = user_name
