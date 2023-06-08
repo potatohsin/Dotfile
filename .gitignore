@@ -1,12 +1,14 @@
 /*
+!/.config
+
+/.config/*
+!.config/dunst
+!.config/foot
+!.config/hypr
+!.config/kitty
+!.config/scripts
+!.config/wofi
 
 !.gitignore
 !README.md
 !.zshrc
-
-!/.config/dunst
-!/.config/foot
-!/.config/hypr
-!/.config/kitty
-!/.config/scripts
-!/.config/wofi
