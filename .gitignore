@@ -1,7 +1,11 @@
 /*
-!/.config
 
-/.config/*
+!.cargo
+.cargo/*
+!.cargo/config
+
+!.config
+.config/*
 !.config/dunst
 !.config/foot
 !.config/hypr
