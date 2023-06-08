@@ -43,9 +43,8 @@ sudo dnf install hyprland waybar-hyprland xdg-desktop-portal-hyprland hyprpaper
 Install other packages
 ```
 sudo dnf install jq polkit-kde qt5ct qt6-qtwayland gnome-keyring htop
-sudo dnf install thunar
-sudo dnf install libva libva-utils mesa-vdpau-drivers vdpauinfo
-sudo dnf install blueman python-cairo python-gobject
+sudo dnf install thunar thunar-archive-plugin
+sudo dnf install blueman python-cairo python-gobject pavucontrol brightnessctl
 sudo dnf install fcitx5 fcitx5-chinese-addons fcitx5-qt fcitx5-gtk
 ```
 >Kitty can't run in my vm.Use other term eg: Foot.

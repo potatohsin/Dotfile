@@ -1,0 +1,46 @@
+#!/bin/bash
+
+get_volume() {
+	volume=$(pactl get-sink-volume 0)
+	echo "$volume"
+}
+
+inc_volume() {
+  pactl set-sink-volume 0 +5%
+}
+
+dec_volume() {
+  pactl set-sink-volume 0 -5%
+}
+
+inc_mic() {
+  pactl set-source-volume 0 +5%
+}
+
+dec_mic() {
+  pactl set-source-volume 0 -5%
+}
+
+toggle_volume_mute() {
+  pactl set-sink-mute 0 toggle
+}
+
+toggle_mic_mute() {
+  pactl set-source-mute 0 toggle
+}
+
+if [[ "$1" == "--inc-volume" ]]; then
+	inc_volume
+elif [[ "$1" == "--dec-volume" ]]; then
+	dec_volume
+elif [[ "$1" == "--inc-mic" ]]; then
+	inc_mic
+elif [[ "$1" == "--dec-mic" ]]; then
+	dec_mic
+elif [[ "$1" == "--toggle-volume-mute" ]]; then
+	toggle_volume_mute
+elif [[ "$1" == "--toggle-mic-mute" ]]; then
+	toggle_mic_mute
+else
+	get_volume
+fi
