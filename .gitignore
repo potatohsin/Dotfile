@@ -1,10 +1,12 @@
 /*
+
 !.gitignore
-!/.config/
 !README.md
 !.zshrc
 
-/.config/pulse
-/.config/Thunar
-/.config/xfce4
-/.config/dconf
+!/.config/dunst
+!/.config/foot
+!/.config/hypr
+!/.config/kitty
+!/.config/scripts
+!/.config/wofi
