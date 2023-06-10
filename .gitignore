@@ -11,6 +11,7 @@
 !.config/hypr
 !.config/kitty
 !.config/scripts
+!.config/waybar
 !.config/wofi
 
 !.gitignore
