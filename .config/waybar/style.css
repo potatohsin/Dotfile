@@ -27,6 +27,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
+  color: rgb(60, 179, 113);
   background: rgba(0, 0, 0, 0);
 }
 
@@ -43,11 +44,14 @@ tooltip {
 #window,
 #tray,
 #network,
-#bluetooth,
 #battery,
 #backlight,
 #pulseaudio,
 #clock,
 #custom-power {
   padding: 0px 10px;
+}
+
+#tray {
+  margin-top: 3px;
 }
