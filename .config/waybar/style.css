@@ -1,46 +1,42 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: Material Design Icons, JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 18px;
-  min-height: 0;
+  font-size: 20px;
 }
 
 window#waybar {
   border-radius: 10px;
-  background: #010409;
+  background: rgba(0, 0, 0, 0.6);
   color: #cdd6f4;
-}
-
-tooltip {
-  background: #010409;
-  border-radius: 10px;
 }
 
 #workspaces button {
   padding: 5px;
-  color: #313244;
+  color: #cdd6f4;
   margin-right: 5px;
 }
 
 #workspaces button.active {
-  color: #a6adc8;
+  color: rgb(60, 179, 113);
 }
 
 #workspaces button.focused {
-  color: #a6adc8;
-  background: #010409;
-}
-
-#workspaces button.urgent {
-  color: #11111b;
-  background: #010409;
+  color: rgb(60, 179, 113);
 }
 
 #workspaces button:hover {
-  background: #010409;
-  color: #cdd6f4;
+  background: rgba(0, 0, 0, 0);
+}
+
+#window {
+  margin: 0px 60px
+}
+
+tooltip {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
 }
 
 #workspaces,
@@ -51,17 +47,7 @@ tooltip {
 #battery,
 #backlight,
 #pulseaudio,
-#clock {
+#clock,
+#custom-power {
   padding: 0px 10px;
-}
-
-#workspaces {
-  margin-left: 10px;
-  padding-right: 0px;
-  padding-left: 5px;
-}
-
-#window {
-  margin-left: 60px;
-  margin-right: 60px;
 }

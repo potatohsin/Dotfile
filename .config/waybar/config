@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "margin": "2 5",
-  "exclusive":true,
+  "exclusive": true,
   "modules-left": [
     "wlr/workspaces"
   ],
@@ -17,7 +17,8 @@
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
-    "clock"
+    "clock",
+    "custom/power"
   ],
   "hyprland/window": {
     "format": "{}"
@@ -37,6 +38,8 @@
     },
     "sort-by-number": true,
     "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
     "persistent_workspaces": {
       "1": [],
       "2": [],
@@ -50,8 +53,7 @@
     }
   },
   "tray": {
-    "icon-size": 18,
-    "spacing": 15
+    "spacing": 10
   },
   "clock": {
     "format": "{:%H:%M}",
@@ -136,7 +138,8 @@
     "on-click": "~/.config/scripts/volume --toggle-mic-mute",
     "on-click-right": "pavucontrol",
     "on-scroll-up": "~/.config/scripts/volume --inc-mic",
-    "on-scroll-down": "~/.config/scripts/volume --dec-mic"
+    "on-scroll-down": "~/.config/scripts/volume --dec-mic",
+    "tooltip-format": "{source_volume}"
   },
   "network": {
     "format-wifi": "{icon}",
@@ -168,5 +171,10 @@
     "tooltip-format-connected-battery": "{device_alias} {device_battery_percentage}%",
     "tooltip-format-enumerate-connected": "{device_enumerate}",
     "tooltip-format-enumerate-connected-battery": "{device_alias} {device_battery_percentage}%"
+  },
+  "custom/power": {
+    "format": "󰐥",
+    "on-click": "~/.config/scripts/power",
+    "tooltip": false
   }
 }
