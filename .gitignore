@@ -14,9 +14,16 @@
 !.config/swaylock
 !.config/waybar
 !.config/wofi
+
 !.config/zsh
+.config/zsh/*
+!.config/zsh/.zshrc
+!.config/zsh/aliases.zsh
+!.config/zsh/env.zsh
+!.config/zsh/options.zsh
+!.config/zsh/plugins.zsh
+!.config/zsh/theme.zsh
 
 !.gitignore
 !README.md
-!.zshrc
 !.zshenv
