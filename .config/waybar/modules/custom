@@ -1,0 +1,13 @@
+{
+  "custom/power": {
+    "format": "󰐥",
+    "on-click": "~/.config/scripts/power",
+    "tooltip": false
+  }
+  // ,
+  // "custom/weather": {
+  //   "exec": "python3 ~/.config/scripts/weather.py",
+  //   "restart-interval": 300,
+  //   "return-type": "json"
+  // }
+}

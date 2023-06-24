@@ -1,0 +1,118 @@
+{
+  "modules-right": [
+    "tray",
+    // "custom/weather",
+    "network",
+    "battery",
+    "backlight",
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "clock",
+    "custom/power"
+  ],
+  "tray": {
+    "spacing": 10,
+    "icon-size": 22
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%Y-%m-%d}"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "on-scroll-up": "~/.config/scripts/brightness --inc",
+    "on-scroll-down": "~/.config/scripts/brightness --dec",
+    "tooltip-format": "{percent}"
+  },
+  "battery": {
+    "format": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "󰚥",
+    "format-icons": {
+      "default": [
+        "󰂎",
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂",
+        "󰁹"
+      ],
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰢞",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ]
+    },
+    "tooltip-format": "{capacity}% {timeTo}"
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "format-muted": "󰝟",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󰋋",
+      "headset": "󰋋",
+      "phone": "󰏲",
+      "portable": "󰏲",
+      "car": "󰄋",
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "on-click": "~/.config/scripts/volume --toggle-volume-mute",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "~/.config/scripts/volume --inc-volume",
+    "on-scroll-down": "~/.config/scripts/volume --dec-volume",
+    "tooltip-format": "{volume}"
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "󰍬",
+    "format-source-muted": "󰍭",
+    "on-click": "~/.config/scripts/volume --toggle-mic-mute",
+    "on-click-right": "pavucontrol",
+    "on-scroll-up": "~/.config/scripts/volume --inc-mic",
+    "on-scroll-down": "~/.config/scripts/volume --dec-mic",
+    "tooltip-format": "{source_volume}"
+  },
+  "network": {
+    "format-wifi": "{icon}",
+    "format-linked": "{icon}",
+    "format-disconnected": "",
+    "format-icons": {
+      "wifi": [
+        "󰤟",
+        "󰤢",
+        "󰤥",
+        "󰤨"
+      ],
+      "linked": [
+        "󰤠",
+        "󰤣",
+        "󰤦",
+        "󰤩"
+      ]
+    },
+    "tooltip-format": "{essid} - {gwaddr}"
+  }
+}
