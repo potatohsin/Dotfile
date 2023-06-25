@@ -1,9 +1,7 @@
 {
-  "layer": "top",
-  "position": "top",
-  "margin": "2 5",
+  "layer":"top",
   "exclusive": true,
-  "include":[
+  "include": [
     "~/.config/waybar/modules/left",
     "~/.config/waybar/modules/right",
     "~/.config/waybar/modules/center",

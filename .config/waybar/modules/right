@@ -4,31 +4,17 @@
     // "custom/weather",
     "network",
     "battery",
-    "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
-    "clock",
-    "custom/power"
+    "clock"
   ],
   "tray": {
     "spacing": 10,
-    "icon-size": 22
+    "icon-size": 18
   },
   "clock": {
     "format": "{:%H:%M}",
     "tooltip-format": "{:%Y-%m-%d}"
-  },
-  "backlight": {
-    "device": "intel_backlight",
-    "format": "{icon}",
-    "format-icons": [
-      "󰃞",
-      "󰃟",
-      "󰃠"
-    ],
-    "on-scroll-up": "~/.config/scripts/brightness --inc",
-    "on-scroll-down": "~/.config/scripts/brightness --dec",
-    "tooltip-format": "{percent}"
   },
   "battery": {
     "format": "{icon}",

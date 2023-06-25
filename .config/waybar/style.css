@@ -1,22 +1,19 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: Material Design Icons, JetBrainsMono Nerd Font;
+  font-family: JetBrainsMono Nerd Font;
   font-weight: bold;
   font-size: 20px;
 }
 
 window#waybar {
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #cdd6f4;
+  color: #ffffff;
+  background: @theme_base_color;
 }
 
-#workspaces button {
+/* #workspaces button {
   padding: 5px;
-  color: #cdd6f4;
-  margin-right: 5px;
-}
+} */
 
 #workspaces button.active {
   color: rgb(60, 179, 113);
@@ -32,7 +29,8 @@ window#waybar {
 }
 
 #window {
-  margin: 0px 60px
+  margin: 0px 60px;
+  font-size: 16px;
 }
 
 tooltip {
@@ -40,18 +38,28 @@ tooltip {
   border-radius: 10px;
 }
 
-#workspaces,
-#window,
-#tray,
+#tray {
+  margin: 5px;
+  padding: 5px;
+}
+
 #network,
 #battery,
-#backlight,
-#pulseaudio,
-#clock,
-#custom-power {
+#pulseaudio {
+  margin: 5px 0px;
   padding: 0px 10px;
 }
 
-#tray {
-  margin-top: 3px;
+#battery {
+  padding: 0px 5px 0px 10px;
+}
+
+#battery.charging {
+  padding: 0px 10px;
+}
+
+#clock{
+  margin: 5px;
+  padding: 0px 5px;
+  font-size: 18px;
 }
